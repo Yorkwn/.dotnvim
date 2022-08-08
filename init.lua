@@ -1,0 +1,6 @@
+require"gk.options"
+require"gk.keymaps"
+require"gk.plugins"
+require"gk.treesitter"
+require"gk.colorscheme"
+require"lualine"
