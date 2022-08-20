@@ -1,3 +1,6 @@
 require"gk.options"
 require"gk.keymaps"
 require"gk.plugins"
+require"gk.colors"
+require"gk.treesitter"
+require"gk.lualine"
