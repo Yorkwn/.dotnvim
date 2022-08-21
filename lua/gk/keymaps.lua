@@ -67,11 +67,4 @@ keymap("n", "<leader>gd", ":!git diff<CR>", opts)
 keymap("n", "<leader>cc", ":!g++ % && ./a.out <CR>", opts)
 keymap("n", "<leader>cp", ":!python % <CR>", opts)
 
--- Moving through panes
-
-keymap("n", "<leader>l", "<C-w>l", opts)
-keymap("n", "<leader>k", "<C-w>k", opts)
-keymap("n", "<leader>j", "<C-w>j", opts)
-keymap("n", "<leader>h", "<C-w>h", opts)
-
 
