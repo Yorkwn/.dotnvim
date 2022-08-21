@@ -1,70 +1,64 @@
 local opts = { noremap = true, silent = true }
-local keymap = vim.api.nvim_set_keymap
+local map = vim.keymap.set
 
---Remap space as leader key
-
-keymap("", "<Space>", "<Nop>", opts)
+-- Remap space as leader key.
+map("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
---window switching
+-- Window switching.
+map("n", "<C-h>", "<C-w>h", opts)
+map("n", "<C-j>", "<C-w>j", opts)
+map("n", "<C-k>", "<C-w>k", opts)
+map("n", "<C-l>", "<C-w>l", opts) 
 
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts) --buffer switching
+-- Buffer switching.
+map("n", "<S-l>", ":bnext<CR>", opts)
+map("n", "<S-h>", ":bprevious<CR>", opts)
 
-keymap("n", "<S-l>", ":bnext<CR>", opts)
-keymap("n", "<S-h>", ":bprevious<CR>", opts)
+-- Escape insert mode.
+map("i", "jk", "<ESC>", opts)
+map("i", "ξκ", "<ESC>", opts)
 
---Escape insert mode
+-- Setting up a tree toggle.
+map("n", "<leader>e", ":Lex 15<CR>", opts)
+map("n", "<leader>ε", ":Lex 15<CR>", opts)
 
-keymap("i", "jk", "<ESC>", opts)
-keymap("i", "ξκ", "<ESC>", opts)
+-- Telescope.
+map("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
 
---Setting up a tree toggle
-
-keymap("n", "<leader>e", ":Lex 15<CR>", opts)
-keymap("n", "<leader>ε", ":Lex 15<CR>", opts)
-
---Telescope
-
-keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
-
---Saving like a boss
-
-keymap("i", "<C-s>", "<ESC>:w<CR>", opts)
-keymap("i", "<C-σ>", "<ESC>:w<CR>", opts)
-keymap("n", "<C-s>", ":w<CR>", opts)
-keymap("n", "<C-σ>", ":w<CR>", opts)
+-- Saving like a boss.
+map("i", "<C-s>", "<ESC>:w<CR>", opts)
+map("i", "<C-σ>", "<ESC>:w<CR>", opts)
+map("n", "<C-s>", ":w<CR>", opts)
+map("n", "<C-σ>", ":w<CR>", opts)
 
 -- Sourcing
+map("n", "<C-r>", ":so ~/.config/nvim/init.lua<CR>", opts)
+map("n", "<leader>slf", ":so %<CR>", opts)
 
-keymap("n", "<C-r>", ":so ~/.config/nvim/init.lua<CR>", opts)
+-- Moving around in greek.
+map("n", "η", "h", opts)
+map("n", "ξ", "j", opts)
+map("n", "κ", "k", opts)
+map("n", "λ", "l", opts)
 
---Moving around in greek
+-- Auto-close stuffs.
+map("i", "(", "()<left>", opts)
+map("i", "[", "[]<left>", opts)
+map("i", "{", "{}<left>", opts)
+map("i", "'", "''<left>", opts)
+map("i", "\"", "\"\"<left>", opts)
 
-keymap("n", "η", "h", opts)
-keymap("n", "ξ", "j", opts)
-keymap("n", "κ", "k", opts)
-keymap("n", "λ", "l", opts)
+-- Git things.
+map("n", "<leader>gs", ":!git status<CR>", opts)
+map("n", "<leader>gd", ":!git diff<CR>", opts)
 
--- Auto-close stuffs
+-- Building (might have the same keymap local for every filetype).
+map("n", "<leader>cc", ":!g++ % && ./a.out <CR>", opts)
+map("n", "<leader>cp", ":!python % <CR>", opts)
 
-keymap("i", "(", "()<left>", opts)
-keymap("i", "[", "[]<left>", opts)
-keymap("i", "{", "{}<left>", opts)
-keymap("i", "'", "''<left>", opts)
-keymap("i", "\"", "\"\"<left>", opts)
-
--- Git things
-
-keymap("n", "<leader>gs", ":!git status<CR>", opts)
-keymap("n", "<leader>gd", ":!git diff<CR>", opts)
-
--- Sourcing 
-
-keymap("n", "<leader>cc", ":!g++ % && ./a.out <CR>", opts)
-keymap("n", "<leader>cp", ":!python % <CR>", opts)
-
+-- Opening splits vscode style.
+map("n", "<C-\\>", ":vsplit<CR>", opts)
+map("n", "<M-\\>", ":split<CR>", opts)
 
