@@ -62,3 +62,4 @@ map("n", "<leader>cp", ":!python % <CR>", opts)
 map("n", "<C-\\>", ":vsplit<CR>", opts)
 map("n", "<M-\\>", ":split<CR>", opts)
 
+--Tab stuff
