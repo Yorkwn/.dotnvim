@@ -9,6 +9,6 @@ require('packer').startup(function(use)
     }
 	use 'nvim-lualine/lualine.nvim'
 	use 'lervag/vimtex'
-	use 'overcache/NeoSolarized'
 	use 'gruvbox-community/gruvbox'
+    use 'L3MON4D3/LuaSnip'
 end)

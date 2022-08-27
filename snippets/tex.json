@@ -1,0 +1,230 @@
+{
+	"Equation": {
+		"prefix": "eq",
+		"body": [
+			"\\begin{equation}",
+			"\t$0",
+			"\\end{equation}"
+		],
+		"description": "equation-template"
+	},
+
+	"Align": {
+		"prefix": "al",
+		"body": [
+			"\\begin{align}",
+			"\t$0",
+			"\\end{align}"
+		]
+	},
+
+	"Equation*": {
+		"prefix": "eqs",
+		"body": [
+			"\\begin{equation*}",
+			"\t$0",
+			"\\end{equation*}"
+		],
+		"description": "equation*-template"
+	},
+
+	"Figure": {
+		"prefix": "fig",
+		"body": [
+			"\\begin{figure}[$1]",
+			"\t\\centering",
+			"\t\\includegraphics[$3]{$2}",
+			"\t\\caption{$4}",
+			"\\end{figure}",
+			"$0"
+		]
+	},
+
+	"Engrish": {
+		"prefix": ["en", "εν"],
+		"body": "\\engl{$1} $0"
+	},
+
+	"alpha": {
+        "prefix": "a",
+        "body": [ "\\alpha" ]
+    },
+    
+	"beta": {
+        "prefix": "b",
+        "body": [ "\\beta" ]
+    },
+    
+	"gamma": {
+        "prefix": "g",
+        "body": [ "\\gamma" ]
+    },
+    
+	"delta": {
+        "prefix": "d",
+        "body": [ "\\delta" ]
+    },
+    
+	"epsilon": {
+        "prefix": "e",
+        "body": [ "\\epsilon" ]
+    },
+    
+	"varepsilon": {
+        "prefix": "ve",
+        "body": [ "\\varepsilon" ]
+    },
+	
+	"eta": {
+		"prefix": "h",
+		"body": "\\eta"
+	},
+    
+	"zeta": {
+        "prefix": "z",
+        "body": [ "\\zeta" ]
+    },
+
+	"theta": {
+		"prefix": "th",
+		"body": "\\theta"
+	},
+
+	"vartheta": {
+		"prefix": "vth",
+		"body": "\\vartheta"
+	},
+    
+	"iota": {
+		"prefix": "i",
+		"body": "\\iota"
+	},
+
+	"kappa": {
+		"prefix": "k",
+		"body": "\\kappa"
+	},
+
+	"lambda": {
+		"prefix": "l",
+		"body": "\\lambda"
+	},
+	
+	"mu": {
+		"prefix": "m",
+		"body": "\\mu"
+	},
+
+	"nu": {
+		"prefix": "n",
+		"body": "\\nu"
+	},
+
+	"ksi": {
+		"prefix": "j",
+		"body": "\\xi"
+	},
+
+	"pi": {
+		"prefix": "p",
+		"body": "\\pi"
+	},
+	
+	"rho": {
+		"prefix": "r",
+		"body": "\\rho"
+	},
+	
+	"varrho": {
+		"prefix": "vr",
+		"body": "\\varrho"
+	},
+
+	"sigma": {
+		"prefix": "s",
+		"body": "\\sigma"
+	},
+	
+	"tau": {
+		"prefix": "t",
+		"body": "\\tau"
+	},
+
+	"ypsilon": {
+		"prefix": "u",
+		"body": "\\upsilon"
+	},
+
+	"phi": {
+		"prefix": "f",
+		"body": "\\phi"
+	},
+	
+	"varphi": {
+		"prefix": "vf",
+		"body": "\\varphi"
+	},
+
+	"chi": {
+		"prefix": "x",
+		"body": "\\chi"
+	},
+
+	"psi": {
+		"prefix": "c",
+		"body": "\\psi"
+	},
+
+	"omega": {
+		"prefix": "v",
+		"body": "\\omega"
+	},
+
+
+
+	"Gamma": {
+        "prefix": "G",
+        "body": [ "\\Gamma" ]
+    },
+	
+	"Delta": {
+        "prefix": "D",
+        "body": [ "\\Delta" ]
+    },
+    
+	"Theta": {
+        "prefix": "T",
+        "body": [ "\\Theta" ]
+    },
+
+	"Lambda": {
+		"prefix": "L",
+		"body": "\\Lambda"
+	},
+    
+	"Ksi": {
+		"prefix": "J",
+		"body": "\\Xi"
+	},
+
+	"Sigma": {
+		"prefix": "S",
+		"body": "\\Sigma"
+	},
+
+	"Phi": {
+		"prefix": "F",
+		"body": "\\Phi"
+	},
+	
+	"Psi": {
+        "prefix": "C",
+        "body": [ "\\Psi" ]
+    },
+	
+	"Omega":{
+		"prefix": "V",
+		"body": "\\Omega"
+	}
+
+}

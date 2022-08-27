@@ -17,21 +17,21 @@ map("n", "<S-l>", ":bnext<CR>", opts)
 map("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Escape insert mode.
-map("i", "jk", "<ESC>", opts)
-map("i", "ξκ", "<ESC>", opts)
+map("i", "jj", "<ESC>", opts)
+map("i", "ξξ", "<ESC>", opts)
 
 -- Setting up a tree toggle.
-map("n", "<leader>e", ":Lex 15<CR>", opts)
-map("n", "<leader>ε", ":Lex 15<CR>", opts)
+map("n", "<leader>e", ":Lex 20<CR>", opts)
+map("n", "<leader>ε", ":Lex 20<CR>", opts)
 
 -- Telescope.
 map("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
 
 -- Saving like a boss.
-map("i", "<C-s>", "<ESC>:w<CR>", opts)
-map("i", "<C-σ>", "<ESC>:w<CR>", opts)
-map("n", "<C-s>", ":w<CR>", opts)
-map("n", "<C-σ>", ":w<CR>", opts)
+map("i", "<C-s>", "<ESC>:w<CR>", nnoremap)
+map("i", "<C-σ>", "<ESC>:w<CR>", nnoremap)
+map("n", "<C-s>", ":w<CR>", noremap)
+map("n", "<C-σ>", ":w<CR>", noremap)
 
 -- Sourcing
 map("n", "<C-r>", ":so ~/.config/nvim/init.lua<CR>", opts)
@@ -61,5 +61,3 @@ map("n", "<leader>cp", ":!python % <CR>", opts)
 -- Opening splits vscode style.
 map("n", "<C-\\>", ":vsplit<CR>", opts)
 map("n", "<M-\\>", ":split<CR>", opts)
-
---Tab stuff

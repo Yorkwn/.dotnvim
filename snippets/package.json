@@ -1,0 +1,14 @@
+{
+    "name" : "snippets",
+    "engines": {
+        "vscode": "^1.70.2"
+    },
+    "contributes": {
+        "snippets": [
+            {
+                "language": "tex",
+                "path": "./tex.json"
+            }
+        ]
+    }
+}
